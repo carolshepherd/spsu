@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="startScreenBorderPane" fx:id="exitMenu" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ExitMenuController">
+  <bottom>
+    <Pane id="startScreenBottomPane" fx:id="exitScreenBottomPane" prefHeight="40.0" prefWidth="600.0" />
+  </bottom>
+  <center>
+    <Pane id="startScreenMainPane" fx:id="exitScreenMainPane" prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <ImageView id="Parchment_Paper_2_by_Allocer2009.jpg" fitHeight="600.0" fitWidth="830.0" layoutX="-99.0" layoutY="-81.0" visible="true">
+          <image>
+            <Image url="@../BeSetArt/Interface%20Images/WinScreenWithBox.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+        <Pane layoutX="58.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" visible="true">
+          <children>
+            <Label layoutX="131.0" layoutY="27.0" text="Score:">
+              <font>
+                <Font name="SansSerif Regular" size="21.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+        <Button id="startButton" fx:id="mainMenuButton" layoutX="259.0" layoutY="479.0" mnemonicParsing="false" onAction="#playAgain" prefWidth="115.00009999999747" text="Main Menu" visible="false" />
+        <Button id="loginScreenLoginButton" fx:id="submitBtn" defaultButton="false" layoutX="273.0" layoutY="479.0" mnemonicParsing="false" onAction="#submitName" prefWidth="86.0" text="Submit" />
+        <TextField id="loginScreenUserNameField" fx:id="userName" layoutX="230.0" layoutY="444.0" prefWidth="172.0" promptText="Username" />
+        <TextField fx:id="scoreBox" editable="false" layoutX="259.0" layoutY="71.0" onAction="#setScore" prefWidth="200.0" promptText="Your Score" text="" />
+        <Label fx:id="userFeedback" layoutX="174.0" layoutY="174.0" prefHeight="81.0" prefWidth="292.0" text="" textFill="RED">
+          <font>
+            <Font size="15.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+  </center>
+  <left>
+    <Pane id="startScreenLeftPane" fx:id="exitScreenLeftPane" prefHeight="479.0" prefWidth="99.0" />
+  </left>
+  <right>
+    <Pane id="PlayGamePane" fx:id="exitScreenOptionPane" prefHeight="479.0" prefWidth="98.99990000000253" visible="true" />
+  </right>
+  <top>
+    <Pane id="startScreenTopPane" fx:id="exitScreenTopPane" prefHeight="81.0" prefWidth="600.0" />
+  </top>
+</BorderPane>

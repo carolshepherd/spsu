@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<anttasks:AntTask xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:anttasks="http://org.eclipse.fx.ide.jdt/1.0" buildDirectory="${project}/build">
+  <deploy embedjnlp="true" height="600" includeDT="true" width="800">
+    <application name="BeSet" mainclass="application.Main" version="2.6" toolkit="fx"/>
+    <info title="BeSet" vendor="CS3693"/>
+  </deploy>
+  <signjar alias="duke" keypass="dukekeypasswd" keystore="C:\Users\Orion\.keystore" storepass="shorurra"/>
+  <manifestEntries name="Permissions" value="all-permissions"/>
+  <manifestEntries name="Application-Name" value="Beset"/>
+  <manifestEntries name="Codebase" value="*"/>
+</anttasks:AntTask>

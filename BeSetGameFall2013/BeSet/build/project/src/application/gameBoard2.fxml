@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="gameBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.GameBoardController">
+  <children>
+    <ImageView id="backGround4" fitHeight="627.0" fitWidth="837.0" layoutX="-14.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../BeSetArt/Interface%20Images/parchment640x400-01.png" />
+      </image>
+    </ImageView>
+    <BorderPane fx:id="gameBoardBorderPane" layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="800.0">
+      <bottom>
+        <Pane prefHeight="62.0" prefWidth="800.0" />
+      </bottom>
+      <center>
+        <GridPane fx:id="gameGrid" gridLinesVisible="true" hgap="0.0" prefHeight="498.0" prefWidth="494.0" vgap="0.0">
+          <children>
+            <ImageView fx:id="oneZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneZero" pickOnBounds="true" preserveRatio="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <ImageView fx:id="threeThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ImageView fx:id="zeroTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <ImageView fx:id="oneOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneOne" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="oneThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fx:id="twoThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#twoThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ImageView fx:id="threeZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeZero" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ImageView fx:id="zeroThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <ImageView fx:id="oneTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fx:id="twoOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#twoOne" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="threeTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ImageView fx:id="threeOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeOne" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ImageView fx:id="zeroOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroOne" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <ImageView fx:id="twoZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#twoZero" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <ImageView fx:id="twoTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#twoTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fx:id="zeroZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroZero" pickOnBounds="true" preserveRatio="false" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+          </padding>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </center>
+      <left>
+        <Pane id="leftPane" prefHeight="507.0" prefWidth="70.0">
+          <children>
+            <ProgressBar fx:id="progressBar" layoutX="-203.0" layoutY="241.0" prefHeight="20.0" prefWidth="475.0" progress="1.0" rotate="270.0" />
+          </children>
+        </Pane>
+      </left>
+      <right>
+        <Pane prefHeight="507.0" prefWidth="235.0001220703125">
+          <children>
+            <VBox layoutX="0.0" layoutY="0.0" prefHeight="498.0" prefWidth="225.0">
+              <children>
+                <Pane id="scorePane" prefHeight="200.0" prefWidth="200.0">
+                  <children>
+                    <ImageView id="basetImage" fitHeight="200.0" fitWidth="225.00003051757812" layoutX="0.0" layoutY="0.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="false" />
+                    <TextArea fx:id="aiScoreBox" editable="false" focusTraversable="true" layoutX="63.0" layoutY="233.0" prefHeight="27.0" prefWidth="100.0" text="" wrapText="true" />
+                    <Label layoutX="30.0" layoutY="140.0" text="Your Score:">
+                      <font>
+                        <Font name="SansSerif Bold" size="21.0" fx:id="x1" />
+                      </font>
+                    </Label>
+                    <TextField id="timer" fx:id="scoreBox" alignment="CENTER" editable="false" focusTraversable="true" layoutX="63.0" layoutY="164.0" prefWidth="100.0" text="" />
+                    <Label font="$x1" layoutX="30.0" layoutY="209.0" text="AI Score:" />
+                    <ImageView id="BeSetlogo225h.png" layoutX="7.0" layoutY="14.0">
+                      <image>
+                        <Image url="@../BeSetArt/Interface%20Images/BeSetLogo.png" preserveRatio="true" smooth="true" />
+                      </image>
+                    </ImageView>
+                  </children>
+                </Pane>
+                <Pane id="buttonPane" prefHeight="226.0" prefWidth="225.0">
+                  <children>
+                    <Button fx:id="startBtn" layoutX="12.0" layoutY="123.0" mnemonicParsing="false" onAction="#STARTGAME" prefHeight="39.999977929684974" prefWidth="198.9998779296875" text="Start" />
+                    <Button fx:id="pauseBtn" layoutX="12.0" layoutY="172.0" mnemonicParsing="false" onAction="#pauseGame" prefHeight="40.0" prefWidth="198.9998779296875" text="Pause" />
+                    <Button id="progBtn" fx:id="quitBtn" layoutX="14.0" layoutY="234.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="50.0" prefWidth="92.9998779296875" text="Quit" />
+                    <Button id="" fx:id="menuBtn" layoutX="118.0" layoutY="234.0" mnemonicParsing="false" onAction="#goToStartMenu" prefHeight="50.0" prefWidth="92.99990000000253" text="Menu" textAlignment="CENTER" wrapText="true" />
+                  </children>
+                </Pane>
+              </children>
+            </VBox>
+          </children>
+        </Pane>
+      </right>
+      <top>
+        <Pane id="topPane" prefHeight="40.0" prefWidth="800.0" />
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

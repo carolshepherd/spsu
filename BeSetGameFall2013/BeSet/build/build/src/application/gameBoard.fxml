@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane id="mainScene" fx:id="gameBoard" mouseTransparent="false" onMouseClicked="#init" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.GameBoardController">
+  <bottom>
+    <Pane prefHeight="62.0" prefWidth="800.0">
+      <children>
+        <Button id="" fx:id="menuBtn" layoutX="693.0" layoutY="6.0" mnemonicParsing="false" onAction="#goToStartMenu" prefHeight="50.0" prefWidth="92.99990000000253" text="Menu" textAlignment="CENTER" wrapText="true" />
+        <Button id="advCounter" fx:id="counterBtn" layoutX="440.0" layoutY="21.0" mnemonicParsing="false" onAction="#advCounter" text="counter" />
+        <Button id="progBtn" fx:id="quitBtn" layoutX="600.0" layoutY="6.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="50.0" prefWidth="92.9998779296875" text="Quit" />
+        <Button fx:id="pauseBtn" layoutX="147.0" layoutY="11.0" mnemonicParsing="false" onAction="#pauseGame" prefHeight="40.0" prefWidth="253.0" text="Pause" />
+        <Button fx:id="startBtn" layoutX="23.0" layoutY="11.0" mnemonicParsing="false" onAction="#init" prefHeight="39.999977929684974" prefWidth="124.0" text="Start" />
+      </children>
+    </Pane>
+  </bottom>
+  <center>
+    <GridPane fx:id="gameGrid" gridLinesVisible="true" hgap="5.0" prefHeight="498.0000999999975" prefWidth="494.0" vgap="5.0">
+      <children>
+        <ImageView fx:id="zeroOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroOne" pickOnBounds="true" preserveRatio="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+        <ImageView fx:id="threeThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <ImageView fx:id="twoZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#twoZero" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <ImageView fx:id="oneOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneOne" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <ImageView fx:id="threeOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeOne" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <ImageView fx:id="threeTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <ImageView fx:id="zeroThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+        <ImageView fx:id="threeZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#threeZero" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <ImageView fx:id="twoOne" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#twoOne" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <ImageView fx:id="oneTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <ImageView fx:id="twoThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <ImageView fx:id="oneThree" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneThree" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <ImageView fx:id="oneZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#oneZero" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <ImageView fx:id="zeroTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+        <ImageView fx:id="twoTwo" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#twoTwo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <ImageView fx:id="zeroZero" fitHeight="120.0" fitWidth="120.0" onMouseClicked="#zeroZero" pickOnBounds="true" preserveRatio="false" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <BorderPane.margin>
+        <Insets />
+      </BorderPane.margin>
+    </GridPane>
+  </center>
+  <left>
+    <Pane fx:id="leftPane" prefHeight="507.0" prefWidth="70.0">
+      <children>
+        <ProgressBar fx:id="progressBar" layoutX="-203.0" layoutY="241.0" prefHeight="20.0" prefWidth="475.0" progress="1.0" rotate="270.0" />
+      </children>
+    </Pane>
+  </left>
+  <right>
+    <Pane prefHeight="507.0" prefWidth="235.0001220703125">
+      <children>
+        <VBox layoutX="0.0" layoutY="0.0" prefHeight="498.0" prefWidth="225.0">
+          <children>
+            <Pane fx:id="basetPicture" prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <Label layoutX="59.0" layoutY="73.0" text="Bastet Goes Here" />
+              </children>
+            </Pane>
+            <Pane fx:id="hammerPane" prefHeight="298.0" prefWidth="225.0">
+              <children>
+                <ImageView fx:id="hammer" fitHeight="100.0" fitWidth="132.0" layoutX="11.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                <TextArea editable="false" layoutX="123.0" layoutY="58.0" prefHeight="43.0" prefWidth="72.0" text="X 3" wrapText="true" />
+                <Label layoutX="123.0" layoutY="6.0" text="Hammers" />
+              </children>
+            </Pane>
+          </children>
+        </VBox>
+      </children>
+    </Pane>
+  </right>
+  <top>
+    <Pane fx:id="topPane" prefHeight="40.0" prefWidth="800.0">
+      <children>
+        <TextArea fx:id="scoreBox" editable="false" focusTraversable="true" layoutX="63.0" layoutY="0.0" prefHeight="27.0" prefWidth="124.0" text="9999999999999" wrapText="true" />
+        <Label layoutX="14.0" layoutY="5.0" text="Score:" />
+        <TextField id="timer" fx:id="timerTb" alignment="CENTER" editable="false" focusTraversable="true" layoutX="216.0" layoutY="6.0" prefWidth="100.0" text="000000" />
+        <TextField fx:id="testBox" editable="false" focusTraversable="true" layoutX="462.0" layoutY="6.0" prefWidth="200.0" />
+      </children>
+    </Pane>
+  </top>
+</BorderPane>
