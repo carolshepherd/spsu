@@ -1,0 +1,217 @@
+/*
+written by Jacob Postema
+Insperation 
+-taken form http://arstechnica.com/ site theme: Light on Dark
+-http://gradients.glrzad.com/
+*/
+
+
+html,body{
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+body{
+
+	font: 120%  Helvetica, Arial, sans-serif;
+	text-align:center;
+	color: #CCCCCC;
+
+	/*
+	Griadient generated at http://gradients.glrzad.com/
+	*/
+	background-image: linear-gradient(bottom, #404040 11%, #000000 52%);
+	background-image: -o-linear-gradient(bottom, #404040 11%, #000000 52%);
+	background-image: -moz-linear-gradient(bottom, #404040 11%, #000000 52%);
+	background-image: -webkit-linear-gradient(bottom, #404040 11%, #000000 52%);
+	background-image: -ms-linear-gradient(bottom, #404040 11%, #000000 52%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.11, #404040),
+		color-stop(0.52, #000000)
+	);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+p{
+	margin:0 10px 10px
+}
+a{
+	padding:5px; 
+	text-decoration:none; 
+	color:#FF6600;
+}
+div#header{
+	background-color:#1A1A1A;
+}
+div#header h1{
+	line-height: 80px;
+	margin: 0;
+	padding-left: 10px;
+	text-align: center;
+	min-height: 100px;
+	}
+div#container{
+	text-align:left;
+}
+div#content p{
+
+}
+div#leaderboard{
+	background-color: #252525;
+}
+div#leaderboard ul{
+	margin:15px 0; 
+	padding:0; 
+	list-style-type:none;
+}
+div#leaderboard li{
+	margin-bottom:5px;
+}
+div#extra{
+	background:#CCC8B3;
+}
+div#footer{
+	background: #1A1A1A;
+	text-align:center;
+}
+div#footer p
+{
+	margin: 0;
+	padding: 5px 10px;
+	color: #1E67BF;
+}
+div#footer ul{
+	list-style-type: none;
+}
+div#container{
+	margin: 0 auto;
+	max-width: 900px;
+}
+div#wrapper{
+	float: left;
+	width: 100%;
+	background-color: #252525;
+}
+div#content{
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 75%;
+	float: left;
+	position: relative;
+}
+div#leaderboard{
+	float: left;
+	width: 20%;
+	padding: 5px;
+}
+div#footer{
+	clear: left;
+	height: 300px;
+	width: 100%;
+	position: relative;
+	color: #1E67BF;
+}
+div#footer div{
+	color: inherit;
+	padding: 5px;
+	text-align: left;
+	position: relative;
+	width: 300px;
+	left: 345px;
+}
+div#add-jokes{
+	clear: left;
+	
+}
+div.input-controls{
+	font-size: 16px;
+	text-align: left;
+	position: relative;
+}
+.fieldset-inputs{
+	position: relative;
+	clear: both;
+	border:none;
+}
+div#button{
+	text-align:center;
+	width: 200px;
+	padding: 5px;
+	float:left;
+}
+#display-joke{
+	width: 90px;
+	height: 45px;
+	font-size: 16px;
+}
+div#add-jokes{
+	max-width: 50%;
+	float:left;
+}
+div#success{
+	display: none;
+}
+p#setupLine{
+}
+p#reply{
+}
+p#punchLine{
+}
+
+div.hidden{
+	display: none;
+}
+div.submit{
+	margin-left: 10px;
+}
+.input{
+	height: 30px;
+	width: 200px;
+	font-size:14px;	
+}
+div#checks{
+	max-width: 45%;
+	float: left;
+	position: relative;
+	margin-left: 100px;
+}
+
+.deleted{
+	background: #FF0004;
+}
+.list-joke{
+	padding: 5px;
+	width: 50%;
+	float:left;
+	position:relative;
+}
+.list-button{
+	width: 35%;
+	float:left;
+	position:relative;
+}
+.border{
+	border-top: medium #1E67BF;
+	float: left;
+	width: 100%;
+
+}
+div#jokes{
+	width: 100%;
+	float: left;
+}
+
+div.controls{
+	padding: 2px;
+}
+
+.spinner{
+	margin-left: 390px;
+	margin-top: 70px;
+}

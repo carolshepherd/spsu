@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>BeSetWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <description></description>
+    <display-name>addLeaderBoard</display-name>
+    <servlet-name>addLeaderBoard</servlet-name>
+    <servlet-class>addLeaderBoard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addLeaderBoard</servlet-name>
+    <url-pattern>/addLeaderBoard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>getTopTen</display-name>
+    <servlet-name>getTopTen</servlet-name>
+    <servlet-class>getTopTen</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getTopTen</servlet-name>
+    <url-pattern>/getTopTen</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>checkProfanity</display-name>
+    <servlet-name>checkProfanity</servlet-name>
+    <servlet-class>checkProfanity</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkProfanity</servlet-name>
+    <url-pattern>/checkProfanity</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+    <listener-class>StartLeaderBoard</listener-class>
+  </listener>
+
+</web-app>

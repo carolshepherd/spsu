@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/docs-assets/ico/favicon.png">
+
+    <title>How To Play</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link href="beset.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="{{ page.base_url }}docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> navbar-inverse navbar-fixed-top
+    <![endif]-->
+    <script type="text/javascript" src="analytics.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="nav nav-pills">
+          <li><a class="navbar-brand" href="index.html">Home</a></li>
+          <li><a class="navbar-brand" href="highscores.html">High Scores</a></li>
+          <li><a class="navbar-brand" href="beset.html">BeSet</a></li>
+          <li><a class="navbar-brand" href="help.html">Help</a></li>
+          <li class="active"><a class="navbar-brand" href="howtoplay.html">How to Play</a></li>
+          <li><a class="navbar-brand" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+		<section>
+			<h1>How to Play</h1>   
+		</section>
+      </div>
+    </div>
+
+    <article class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+      		<div class="col-md-1"></div>
+        	<section class="col-md-10">
+        		<!-- Snippet Code form http://www.webtechtoday.com/sample-faq-page-ui-design-with-bootstrap/-->
+            	<div class="accordion" id="accordion2">
+            		<!-- Each item should be enclosed inside the class "accordion-group". Note down the below markup. -->
+                	<div class="accordion-group">
+                		<div class="accordion-heading">
+                    		<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#1">
+                        		<!-- Title. Don't forget the <i> tag. -->
+                        		<h3><span class="glyphicon glyphicon-plus-sign"></span>Features of the cards</h3>
+                       		</a>
+                    	</div>
+                   	  <div id="1" class="accordion-body collapse" style="height: 0px;">
+                       	<p>BeSet is based on cards and you are trying to creating sets from those cards. The cards have 4 features: Color, Shape, Shading, and Number.</p>
+                        <img src="images/BeSetGameSnapshot.png" width="553" height="502" alt=""/> 
+                      </div>
+               		</div>
+        		</div>
+            	<!-- Each item should be enclosed inside the class "accordion-group". Note down the below markup. -->
+                <div class="accordion-group">
+                	<div class="accordion-heading">
+                    	<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#2">
+                        	<!-- Title. Don't forget the <i> tag. -->
+                        	<h3><span class="glyphicon glyphicon-plus-sign"></span>What is a set?</h3>
+                       	</a>
+                    </div>
+                   	<div id="2" class="accordion-body collapse" style="height: 0px;">
+                    	<p> A set consists of three cards which satisfy all of these conditions:</p>
+                        <ul>
+                        	<li>They all have the same number, or they have three different numbers.</li>
+                            <li>They all have the same symbol, or they have three different symbols.</li>
+                            <li>They all have the same shading, or they have three different shadings.</li>
+                            <li>They all have the same color, or they have three different colors.</li>
+                        </ul>
+                        <img src="images/set.png" width="370" height="120" alt=""/>
+                        <br>
+                        <p>We use the same mechanics as Set so here is a great <a href="http://www.setgame.com/sites/default/files/tutorials/tutorial/SetTutorial.swf" >tutorial</a> on how to make a set.</p>
+                    </div>
+               	</div>
+                <div class="accordion-group">
+                	<div class="accordion-heading">
+                    	<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#3">
+                        	<!-- Title. Don't forget the <i> tag. -->
+                        	<h3><span class="glyphicon glyphicon-plus-sign"></span>The Big Blue Bar</h3>
+                       	</a>
+                    </div>
+                   	<div id="3" class="accordion-body collapse" style="height: 0px;">
+                    	<p>You might Notice a big blue bar on the left side of the screen and wonder why it is draining. That bar holds the Sand of Time, which drain out of the container until it reaches the bottom and the Goddess moves and selects a set.</p>
+                    </div>
+               	</div>
+            </section>
+        	<div class="col-md-1"></div>
+      </div>
+    </article>
+      <hr>
+      
+      <footer class="container">
+        <div class="container">
+          <p>&copy; 2013 <a class="btn btn-link" href="about.html" role="button">About</a></p>	
+        </div>
+      </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/docs-assets/ico/favicon.png">
+
+    <title>BeSet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link href="beset.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="{{ page.base_url }}docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> navbar-inverse navbar-fixed-top
+    <![endif]-->
+    <script type="text/javascript" src="analytics.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="nav nav-pills">
+          <li class="active"><a class="navbar-brand" href="index.html">Home</a></li>
+          <li><a class="navbar-brand" href="highscores.html">High Scores</a></li>
+          <li><a class="navbar-brand" href="beset.html">BeSet</a></li>
+          <li><a class="navbar-brand" href="help.html">Help</a></li>
+          <li><a class="navbar-brand" href="howtoplay.html">How to Play</a></li>
+          <li><a class="navbar-brand" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+		<img alt="BeSet Logo" src="/images/BeSetLogo.png">
+		<section>
+			<p>This is a online version of the game Set, but we like to call this game BeSet. Give it a go and see how high you can get your score.</p>
+        	<p><a class="btn btn-primary" href="beset.html" role="button">Play BeSet &raquo;</a></p>
+        	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="I just played BeSet." data-url="http://besetgame.com/">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</section>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Leader Board</h2>
+          <p>Top 5 Scores</p>
+          <ol class="top5">
+          </ol>
+          <p><a class="btn btn-default" href="highscores.html" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>How to Get Started</h2>
+          <p>Beset is developed using java 1.7 and javafx 2.0. To run the game please use Google Chrome, Firefox, Safari, or Internet Explorer 9/10. Please allow java to run and then click run on the Security Warning popup.</p>
+          <p><a class="btn btn-default" href="help.html" role="button">Having Trouble &raquo;</a></p>
+
+       </div>
+               <div class="col-md-4">
+          <h2>How to play</h2>
+          <p>Not sure how to play?</p>
+          <p><a class="btn btn-default" href="howtoplay.html" role="button">Learn How &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+      <footer>
+        <div class="container">
+          <p>&copy; 2013 <a class="btn btn-link" href="about.html" role="button">About</a></p>	
+        </div>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="top5.js"></script>
+
+  </body>
+</html>

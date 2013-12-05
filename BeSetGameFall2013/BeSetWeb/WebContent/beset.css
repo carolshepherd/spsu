@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+ol.d {list-style-type: lower-alpha;}
+
+div.image{
+	float: left;
+	margin: .5em;
+	width: 141px;
+	height: 141px;
+}
+
+div.jacob{
+	background-image: url(images/jacob_postema_141.png);
+}
+
+div.ethan{
+	background-image: url(images/ethan-treff.jpg);
+}
+
+div.clint{
+	background-image: url(images/clint_walker.png);
+}
+
+div.carol{
+	background-image: url(images/carol_shepherd.png);
+}
+
+div.katie{
+	background-image: url(images/katie_trivette.png);
+}
+div.logan{
+	background-image: url(images/logan_genet.jpg)
+}
+
+div.cullen{
+	background-image:url(images/cullen_foster.jpg);
+}
+
+div.bio{
+	float: left;
+	padding-left: .5em;
+	max-width: 60%;
+}
+
+a.twitter-share-button{
+	float: right;
+}
+
